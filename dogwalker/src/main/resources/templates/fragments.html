@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+    <meta charset="UTF-8"/>
+
+    <title th:text="${title}">Dog Walker</title>
+
+</head>
+<body>
+<h2 th:text="'Welcome to ' + ${message}"></h2>
+<div th:fragment="navigation">
+    <table>
+        <tr>
+            <td><a href="home">Home</a></td>
+        </tr>
+        <tr>
+            <td><a href="sign-up">Sign Up</a></td>
+        </tr>
+        <tr>
+            <td><a href="login">Log in</a></td>
+        </tr>
+    </table>
+</div>
+
+
+
+</body>
+</html>
